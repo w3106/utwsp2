@@ -1,0 +1,171 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=1;" />
+
+
+
+<style type="text/css">
+  :focus {
+    outline: 0;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    /* 必寫!!!*/
+  }
+
+  /* =====================================================================================
+........................................mobile版.......................................
+=======================================================================================*/
+
+  .main-bg {
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    /* 必寫!!!*/
+    max-width: 1920px;
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+    background-image: none;
+    /* 滿版主視覺背景 */
+    background-repeat: no-repeat;
+    background-position: center top;
+    /* background-position: center 182px; */
+    /* background-attachment: fixed; */
+    /* 套HEADER時需要打開 */
+  }
+
+  .main {
+    display: block;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  /* 視覺左上角活動LOGO_樣式
+  ---------------------------*/
+
+  .udnLOGO {
+    display: block;
+    z-index: 700;
+    position: absolute;
+    width: calc(139/640*100%);
+    /* 更改數值 調整logo大小 */
+    left: 2%;
+    top: 1%;
+  }
+
+  .udnLOGO span {
+    display: block;
+    width: 100%;
+    height: 0;
+    background-size: 100% auto;
+    padding-bottom: calc(293/797*100%);
+    /* 更改數值 調整logo整體高度*/
+    /* padding-bottom: calc(360/797*100%); */
+    /* 用第4/5 底色_logo 打開開素質 */
+    background-image: url('https://img.udn.com/art/2019_logo/images/new_udnlogo_02.svg');
+  }
+
+  .main img {
+    width: 100%;
+    display: block;
+  }
+
+  .main .main_items {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+
+
+  /* =====================================================================================
+........................................desktop版.......................................
+=======================================================================================*/
+
+
+  @media screen and (min-width: 641px) {
+
+    .main-bg {
+      background-color: #000000;
+      background-image: url('images/index_bg.jpg');
+      /* 滿版主視覺背景 */
+    }
+
+
+    /* 視覺左上角活動LOGO_樣式
+      ---------------------------*/
+
+    .udnLOGO {
+      width: calc(139/960*100%);
+      /* 更改數值 調整logo大小 */
+      left: calc(20/960*100%);
+      top: calc(10/960*100%);
+    }
+
+  }
+</style>
+
+<!-- <script src="https://img.udn.com/art/js_temp/jquery.2.2.4.min.js?v005"></script> -->
+<!-- 套上"有天地的後台時",請關掉這隻程式 -->
+
+<!-- imageMap RWD開始 -->
+<script src="https://img.udn.com/art/js_temp/jquery.rwdImageMaps.min.js?v005"></script>
+<script>
+  $(function () {
+    $("img[usemap]").rwdImageMaps();
+  });
+</script>
+<!-- imageMap RWD結束 -->
+
+
+<body>
+
+  <!----全部外框start---->
+  <div class="main-bg">
+
+    <!----內容---->
+    <div class="main">
+      <ul>
+
+        <!-- LOGO -->
+        <a href="https://shopping.udn.com/mall/Cc1a00.do" class="udnLOGO">
+          <span></span>
+        </a>
+        <!-- LOGO -->
+
+        <!-- 商品區塊 -->
+        <li class="main_items"> <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=H_001_005_030_001"><img src="images/index_02.jpg" style="display:block;" border="0" hidefocus="true" /></a>
+
+        </li>
+		  
+		
+        <!-- 商品區塊 -->
+
+      </ul>
+    </div>
+    <!----內容---->
+
+  </div>
+  <!----全部外框end---->
+
+</body>
+
+</html>
